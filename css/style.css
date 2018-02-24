@@ -18,6 +18,10 @@ body {
 	margin: 0 auto;
 }
 
+.main-header {
+	margin-bottom: 60px;
+}
+
 .main-navigation {
 	width: 780px;
 	float: left;
@@ -26,4 +30,41 @@ body {
 .user-block {
 	width: 140px;
 	float: right;
+}
+
+.index-logo {
+	width: 368px;
+	height: 204px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 25px;
+}
+
+.features-item {
+	float: left;
+	width: 300px;
+	margin-right: 20px;
+}
+
+.features-item:last-child {
+	margin-right: 0;
+}
+
+.features {
+	margin-bottom: 64px;
+}
+
+.index-content {
+	margin-bottom: 35px;
+	padding: 50px 80px;
+}
+
+.index-content-left {
+	float: left;
+	width: 380px;
+}
+
+.index-content-right {
+	float: right;
+	width: 300px;
 }
