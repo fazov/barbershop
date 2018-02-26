@@ -68,3 +68,25 @@ body {
 	float: right;
 	width: 300px;
 }
+
+.main-footer {
+	margin-top: 65px;
+	padding-top: 60px;
+	padding-bottom: 40px;
+}
+
+.footer-contacts {
+	float: left;
+	width: 320px;
+	margin-right: 60px;
+}
+
+.footer-social {
+	float: left;
+	width: 180px;
+}
+
+.footer-copyright {
+	float: right;
+	width: 180px;
+}
