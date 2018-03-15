@@ -1,9 +1,11 @@
 html,
 body {
-	min-width: 1122px;
-	min-height: 1750px;
 	margin: 0;
 	padding: 0;
+}
+
+body {
+	min-width: 960px;
 }
 
 .clearfix::after {
@@ -40,6 +42,10 @@ body {
 	margin-bottom: 25px;
 }
 
+.features {
+	margin-bottom: 64px;
+}
+
 .features-item {
 	float: left;
 	width: 300px;
@@ -48,10 +54,6 @@ body {
 
 .features-item:last-child {
 	margin-right: 0;
-}
-
-.features {
-	margin-bottom: 64px;
 }
 
 .index-content {
