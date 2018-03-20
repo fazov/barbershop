@@ -165,6 +165,11 @@ body {
 .index-content {
 	margin-bottom: 35px;
 	padding: 50px 80px;
+
+	color: #000000;
+
+	background: url("../img/line-shadow.png") no-repeat center,
+							#f8f5f2 url("../img/texture-white.jpg");
 }
 
 .index-content-left {
@@ -175,6 +180,50 @@ body {
 .index-content-right {
 	float: right;
 	width: 300px;
+}
+
+.index-content-title {
+	margin: 0;
+	margin-bottom: 25px;
+
+	font-size: 30px;
+	line-height: 42px;
+}
+
+.index-content p {
+	margin: 0;
+	margin-bottom: 25px;
+}
+
+.news-preview {
+	margin: 0;
+	padding: 0;
+	padding-right: 35px;
+
+	list-style: none;
+}
+
+.news-preview li {
+	margin-bottom: 25px;
+}
+
+.news-preview p {
+	margin-bottom: 0;
+}
+
+.news-preview time {
+	text-transform: none;
+}
+
+.btn {
+	font: inherit;
+	color: #ffffff;
+	text-transform: uppercase;
+	text-decoration: none;
+
+	background-color: #000000;
+	border: none;
+	cursor: pointer;
 }
 
 .main-footer {
