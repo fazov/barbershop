@@ -112,23 +112,54 @@ body {
 .index-logo {
 	width: 368px;
 	height: 204px;
-	margin-left: auto;
-	margin-right: auto;
+	margin: 0 auto;
 	margin-bottom: 25px;
 }
 
 .features {
-	margin-bottom: 64px;
+	margin-bottom: 80px;
 }
 
 .features-item {
 	float: left;
 	width: 300px;
 	margin-right: 20px;
+
+	text-align: center;
 }
 
 .features-item:last-child {
 	margin-right: 0;
+}
+
+.features-name {
+	position: relative;
+	display: block;
+	margin-bottom: 30px;
+	padding-bottom: 35px;
+
+	font-size: 30px;
+	line-height: 42px;
+}
+
+.features-name::after {
+	content: "";
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+
+	display: block;
+	width: 20px;
+	height: 20px;
+	margin-left: -10px;
+
+	background-color: #ffffff;
+	transform: rotate(45deg);
+}
+
+.features-item p {
+	margin: 10px;
+	margin-bottom: 0;
 }
 
 .index-content {
