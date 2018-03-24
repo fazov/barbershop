@@ -282,10 +282,42 @@ body {
 	right: 0;
 }
 
+.appointment-form input {
+	float: left;
+	width: 106px;
+	margin-right: 20px;
+	margin-bottom: 20px;
+	padding: 7px 15px;
+
+	font: inherit;
+	color: inherit;
+	text-transform: inherit;
+
+	background-color: #f9f6f3;
+	border: 2px solid #000000;
+}
+
+.appointment-form input:nth-child(2n) {
+	margin-right: 0;
+}
+
+.appointment-form .btn {
+	clear: both;
+	width: 100%;
+}
+
+.appointment-form input:focus {
+	border-color: #663d15;
+}
+
 .main-footer {
 	margin-top: 65px;
 	padding-top: 60px;
 	padding-bottom: 40px;
+
+	color: #ffffff;
+
+	background: #232323 url("../img/footer-bg.jpg");
 }
 
 .footer-contacts {
@@ -294,12 +326,88 @@ body {
 	margin-right: 60px;
 }
 
+.footer-contacts a {
+	color: #ffffff;
+}
+
+.footer-contacts a:hover {
+	text-decoration: none;
+}
+
 .footer-social {
 	float: left;
 	width: 180px;
+
+	text-align: center;
+}
+
+.footer-social p {
+	margin: 0;
+	margin-bottom: 15px;
+}
+
+.social-btn {
+	display: inline-block;
+	width: 43px;
+	height: 43px;
+	margin: 0 2px;
+
+	font-size: 0;
+	vertical-align: top;
+	text-decoration: none;
+
+	background: #000000 url("../img/sprite-indx.png") no-repeat center;
+
+	transition:
+			background-position 0.3s,
+			background-color 0.3s;
+}
+
+.social-btn:hover {
+	background-color: #ffffff;
+}
+
+.social-btn-vk {
+	background-position: -1px -199px;
+}
+
+.social-btn-fb {
+	background-position: 5px 0px;
+}
+
+.social-btn-inst {
+	background-position: 1px -85px;
+}
+
+.social-btn-vk:hover {
+	background-position: -1px -235px;
+}
+
+.social-btn-fb:hover {
+	background-position: 5px -42px;
+}
+
+.social-btn-inst:hover {
+	background-position: 1px -125px;
 }
 
 .footer-copyright {
 	float: right;
-	width: 180px;
+	max-width: 180px;
+}
+
+.footer-copyright p {
+	margin: 0;
+	margin-bottom: 15px;
+
+	text-align: center;
+}
+
+.footer-copyright .btn {
+	margin-right: 0;
+}
+
+.footer-copyright .btn:hover {
+	color: #000000;
+	background-color: #ffffff;
 }
