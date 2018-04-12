@@ -67,6 +67,22 @@ body {
 	background: #242424;
 }
 
+.main-navigation .logo-inner {
+	float: left;
+	width: 111px;
+	height: 24px;
+	padding-top: 21px;
+}
+
+.main-navigation .logo-inner img {
+	width: 111px;
+	height: 24px;
+}
+
+.main-navigation .logo-inner:hover {
+	background: none;
+}
+
 .user-block {
 	float: right;
 	max-width: 140px;
