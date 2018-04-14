@@ -17,6 +17,12 @@ body {
 	background: #000000 url("../img/body-bg.jpg") no-repeat center top;
 }
 
+.inner-page {
+	color: #000000;
+
+	background: #f8f5f2 url("../img/texture-white.jpg") repeat;
+}
+
 .clearfix::after {
 	content: "";
 	display: table;
@@ -65,6 +71,28 @@ body {
 
 .main-navigation a:hover {
 	background: #242424;
+}
+
+.main-navigation .active {
+	position: relative;
+
+	background-color: none;
+}
+
+.main-navigation .active a:hover {
+	background: none;
+}
+
+.main-navigation .active::after {
+	content: "";
+	position: absolute;
+	right: 20px;
+	left: 20px;
+	bottom: 0;
+
+	height: 5px;
+
+	background-color: #ffffff;
 }
 
 .main-navigation .logo-inner {
@@ -426,4 +454,50 @@ body {
 .footer-copyright .btn:hover {
 	color: #000000;
 	background-color: #ffffff;
+}
+
+/* 
+=======================================
+			Стили страницы item.html
+=======================================
+*/
+
+.item-header {
+	float: left;
+	width: 640px;
+	margin-bottom: 50px;
+}
+
+.breadcrumbs {
+	margin: 0;
+	padding: 0;
+
+	list-style: none;
+	font-size: 0;
+}
+
+.breadcrumbs li {
+	display: inline-block;
+	vertical-align: top;
+
+	font-size: 14px;
+	line-height: 24px;
+}
+
+.breadcrumbs a {
+	text-decoration: none;
+}
+
+.commodity-cards {
+	float: left;
+	width: 470px;
+}
+
+.about-item {
+	float: right;
+	width: 390px;
+}
+
+.description-item p span {
+	text-align: right;
 }

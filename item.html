@@ -3,12 +3,17 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Набор для путешествий «Baxter of California»</title>
+	<link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=cyrillic" rel="stylesheet">
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 	<header class="main-header">
-		<div class="container">
+		<div class="container clearfix">
 			<nav class="main-navigation">
-				<a href="#"><img src="#" width="111" height="24" alt="Барбершоп «Бородинский»"></a>
+				<a class="logo-inner" href="index.html">
+					<img src="img/inner-logo.png" width="111" height="24" alt="Барбершоп «Бородинский»">
+				</a>
 				<ul>
 					<li>
 						<a href="#">Информация</a>
@@ -16,7 +21,7 @@
 					<li>
 						<a href="#">Новости</a>
 					</li>
-					<li>
+					<li class="active">
 						<a href="#">Прайс-лист</a>
 					</li>
 					<li>
@@ -32,12 +37,12 @@
 			</div>
 		</div>
 	</header>
-	<main class="container">
-		<h1>Набор для путешествий «Baxter of California»</h1>
-		<div class="breadcrumbs">
-			<ul>
+	<main class="container clearfix">
+		<div class="item-header">
+			<h1>Набор для путешествий «Baxter of California»</h1>
+			<ul class="breadcrumbs">
 				<li>
-					<a href="#">Главная</a>
+					<a href="index.html">Главная</a>
 				</li>
 				<li>
 					<a href="#">Магазин</a>
@@ -51,10 +56,10 @@
 			</ul>
 		</div>
 		<div class="commodity-cards">
-			<img src="#" width="486" height="524" alt="аксессуар Travel Kit image3">
-			<img src="#" width="166" height="175" alt="аксессуар Travel Kit image1">
-			<img src="#" width="166" height="175" alt="аксессуар Travel Kit image2">
-			<img src="#" width="166" height="175" alt="аксессуар Travel Kit image3">
+			<img src="img/layer47_copy.jpg" width="460" height="498" alt="аксессуар Travel Kit image3">
+			<img src="img/layer45.jpg" width="140" height="149" alt="аксессуар Travel Kit image1">
+			<img src="img/layer46.jpg" width="140" height="149" alt="аксессуар Travel Kit image2">
+			<img src="img/layer47.jpg" width="140" height="149" alt="аксессуар Travel Kit image3">
 		</div>
 		<div class="about-item">
 			<div class="description-item">
@@ -83,7 +88,7 @@
 		</div>
 	</main>
 	<footer class="main-footer">
-		<div class="container">
+		<div class="container clearfix">
 			<section class="footer-contacts">
 				Барбершоп «Бородинский»<br>
 				Адрес: г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
