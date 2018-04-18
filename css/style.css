@@ -41,6 +41,10 @@ body {
 	background: #000000;
 }
 
+.inner-page .main-header {
+	margin-bottom: 50px;
+}
+
 .main-navigation {
 	width: 780px;
 	float: left;
@@ -462,10 +466,17 @@ body {
 =======================================
 */
 
-.item-header {
-	float: left;
-	width: 640px;
-	margin-bottom: 50px;
+.inner-page-title {
+	margin-bottom: 55px;
+}
+
+.inner-page-title h1 {
+	margin: 0;
+	margin-bottom: 20px;
+	padding: 0;
+
+	font-size: 30px;
+	line-height: 42px;
 }
 
 .breadcrumbs {
@@ -473,23 +484,46 @@ body {
 	padding: 0;
 
 	list-style: none;
-	font-size: 0;
 }
 
 .breadcrumbs li {
-	display: inline-block;
-	vertical-align: top;
+	position: relative;
 
-	font-size: 14px;
-	line-height: 24px;
+	display: inline;
+	padding-right: 40px;
+}
+
+.breadcrumbs li::after {
+	content: "";
+	position: absolute;
+	top: 4px;
+	right: 18px;
+
+	width: 8px;
+	height: 8px;
+
+	background-color: #000000;
+	transform: rotate(45deg);
 }
 
 .breadcrumbs a {
+	color: #000000;
 	text-decoration: none;
 }
 
+.breadcrumbs a:hover {
+	text-decoration: underline;
+}
+
+.breadcrumbs .current {
+	color: #aba9a7;
+}
+
+.breadcrumbs .current::after {
+	display: none;
+}
+
 .commodity-cards {
-	float: left;
 	width: 480px;
 
 	font-size: 0;
@@ -508,7 +542,6 @@ body {
 }
 
 .about-item {
-	float: right;
 	width: 390px;
 }
 
@@ -581,4 +614,28 @@ body {
 	background-color: #000000;
 
 	transform: rotate(45deg);
+}
+
+/* 
+=======================================
+			Стили страницы shop.html
+=======================================
+*/
+
+.filter-form {
+	width: 170px;
+}
+
+.catalog-shop {
+	width: 700px;
+}
+
+.cards {
+	font-size: 0;
+	line-height: 0;
+}
+
+.card-product {
+	width: 220px;
+	background-color: #ffffff;
 }

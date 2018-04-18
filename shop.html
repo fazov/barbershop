@@ -3,13 +3,17 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Средства для ухода</title>
-	<link rel="stylesheet" href="style.css">
+	<link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=cyrillic" rel="stylesheet">
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/style.css">
 </head>
-<body>
+<body class="inner-page">
 	<header class="main-header">
-		<div class="container">
+		<div class="container clearfix">
 			<nav class="main-navigation">
-				<a href="#"><img src="#" width="111" height="24" alt="Барбершоп «Бородинский»"></a>
+				<a class="logo-inner" href="index.html">
+					<img src="img/inner-logo.png" width="111" height="24" alt="Барбершоп «Бородинский»">
+				</a>
 				<ul>
 					<li>
 						<a href="#">Информация</a>
@@ -20,7 +24,7 @@
 					<li>
 						<a href="#">Прайс-лист</a>
 					</li>
-					<li>
+					<li class="active">
 						<a href="#">Магазин</a>
 					</li>
 					<li>
@@ -34,21 +38,17 @@
 		</div>
 	</header>
 	<main class="container">
-		<div class="title-shop">
+		<div class="inner-page-title">
 			<h1>Средства для ухода</h1>
-			<div class="breadcrumbs">
-				<ul>
-					<li>
-						<a href="#">Главная</a>
-					</li>
-					<li>
-						<a href="#">Магазин</a>
-					</li>
-					<li>
-						<a href="#">Средства для ухода</a>
-					</li>
-				</ul>
-			</div>
+			<ul class="breadcrumbs">
+				<li>
+					<a href="#">Главная</a>
+				</li>
+				<li>
+					<a href="#">Магазин</a>
+				</li>
+				<li class="current">Средства для ухода</li>
+			</ul>
 		</div>
 		<form class="filter-form" action="#" method="get">
 			<fieldset>
@@ -90,7 +90,15 @@
 			</fieldset>
 			<button class="btn" type="submit">Показать</button>
 		</form>
-		<div class="content-shop">
+		<div class="catalog-shop">
+			<div class="cards">
+				<div class="card-product"></div>
+				<div class="card-product"></div>
+				<div class="card-product"></div>
+				<div class="card-product"></div>
+				<div class="card-product"></div>
+				<div class="card-product"></div>
+			</div>
 			<div class="switch">
 				<a href="#">1</a>
 				<a class="current" href="#">2</a>
@@ -100,7 +108,7 @@
 		</div>
 	</main>
 	<footer class="main-footer">
-		<div class="container">
+		<div class="container clearfix">
 			<section class="footer-contacts">
 				Барбершоп «Бородинский»<br>
 				Адрес: г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
