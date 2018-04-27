@@ -368,6 +368,10 @@ body {
 	background: #232323 url("../img/footer-bg.jpg");
 }
 
+.inner-page-footer {
+	box-shadow: inset 0px 30px 40px -15px #000;
+}
+
 .footer-contacts {
 	float: left;
 	width: 320px;
