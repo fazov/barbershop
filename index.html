@@ -150,12 +150,28 @@
 	<div class="modal-overlay"></div>
 	<script>
 		var link = document.querySelector(".login");
+		var overlay = document.querySelector(".modal-overlay");
 		var popup = document.querySelector(".modal-content");
+		var close = document.querySelector(".modal-content-close");
+		var login = popup.querySelector("[name=login]");
 
 		link.addEventListener("click", function(event) {
 			event.preventDefault();
+			overlay.classList.add("modal-overlay-show");
 			popup.classList.add("modal-content-show");
+			login.focus();
 		});
+
+		close.addEventListener("click", function(event) {
+			event.preventDefault();
+			popup.classList.remove("modal-content-show");
+			overlay.classList.remove("modal-overlay-show");
+		})
+
+		overlay.addEventListener("click", function() {
+			popup.classList.remove("modal-content-show");
+			overlay.classList.remove("modal-overlay-show");
+		})
 	</script>
 </body>
 </html>

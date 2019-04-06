@@ -520,6 +520,10 @@ body {
 	background: rgba(0, 0, 0, 0.5);
 }
 
+.modal-overlay-show {
+	display: block;
+}
+
 .modal-content-close {
 	position: absolute;
 	top: 0;
